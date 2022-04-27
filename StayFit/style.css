@@ -96,7 +96,7 @@ body::before {
         padding-bottom: 1em;
     }
 
-    button {
+    .hero-cta {
         -webkit-appearance: none;
         opacity: 1
     }
