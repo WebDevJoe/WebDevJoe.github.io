@@ -152,6 +152,7 @@ body::before {
     background-color: #6875F1;
     border-radius: 50px;
     padding: 15px 30px;
+    -webkit-appearance: none;
 }
 
 
@@ -236,6 +237,10 @@ form button {
         overflow: hidden;
         border-radius: 50px;
         border: solid 2px white;
+    }
+
+    button {
+        -webkit-appearance: none;
     }
 }
 
