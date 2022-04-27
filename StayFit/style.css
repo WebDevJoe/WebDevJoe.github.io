@@ -246,6 +246,7 @@ form button {
 
     button {
         -webkit-appearance: none;
+        opacity: 1;
     }
 }
 
