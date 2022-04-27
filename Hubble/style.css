@@ -92,12 +92,7 @@ button {
 button:hover {
     color: white;
     background-color: hsl(257, 40%, 49%);
-    padding: 15px 70px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    border: none;
-    border-radius: 50px;
-    font-size: 18px;
-    cursor: pointer;
+
 
 }
 
