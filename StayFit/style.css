@@ -96,6 +96,11 @@ body::before {
         padding-bottom: 1em;
     }
 
+    button {
+        -webkit-appearance: none;
+        opacity: 1
+    }
+
 
 
 }
