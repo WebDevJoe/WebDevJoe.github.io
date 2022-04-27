@@ -254,6 +254,22 @@ form button {
         -webkit-appearance: none;
         opacity: 1;
     }
+
+    .hero-cta {
+        background-color: #6875F1;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px 80px;
+        border-radius: 30px;
+        -webkit-appearance: none;
+        opacity: 1;
+    }
+
+    .hero-cta:hover {
+        color: white;
+        border: solid 2px white;
+    }
 }
 
 
