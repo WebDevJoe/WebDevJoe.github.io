@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FoodSpace|Our Recipes</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .rightside {
+        background-image: url(./imgBig/feature4.jpg);
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+      }
+      .our-recipes-box-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HEADER-->
+    <!--CODE FROM WEB DEV TUTORIALS-->
+    <header id="top">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="nav-logo">FoodSpace</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="ourrecipes.html" class="nav-link">Our Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a href="faqs.html" class="nav-link">Faqs</a>
+            </li>
+            <li class="nav-item">
+              <a href="contactUs.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--HEADER-->
+
+    <!--MAIN CONTENT-->
+    <section class="recipes-section p-5">
+      <h2 class="section-heading">Our Recipes</h2>
+      <h4>Breakfast</h4>
+      <div class="container our-recipes-box-container">
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/breakfast1.jpg"
+            height="200"
+            width="200"
+            alt="Egg & Avacado Toast"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Egg & Avacado toast</h4>
+            <p>Egg and Avacado served on crisp toast.</p>
+            <a class="icon-link" href="eggtoast.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/breakfast2.jpg"
+            height="200"
+            width="200"
+            alt="French Toast"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">French Toast</h4>
+            <p>Delicious and easy to make french toast.</p>
+            <a class="icon-link" href="frenchtoast.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/breakfast3.jpg"
+            height="200"
+            width="200"
+            alt="Granola Bowl"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Granola Bowl</h4>
+            <p>Granola bowl served with delicious berries.</p>
+            <a class="icon-link" href="granola.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/breakfast4.jpg"
+            height="200"
+            width="200"
+            alt="Oatmeal Bowl"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Oatmeal Bowl</h4>
+            <p>Start your day with this simple oatmeal bowl.</p>
+            <a class="icon-link" href="oatmeal.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Featured recipe-->
+
+    <section class="recipes-section p-5">
+      <h4>Lunch</h4>
+      <div class="container our-recipes-box-container">
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/lunch1.jpg"
+            height="200"
+            width="200"
+            alt="Tomato & Basil Pasta"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Tomato & Basil Pasta</h4>
+            <p>Easy to make and low calorie pasta.</p>
+            <a class="icon-link" href="pasta.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/feature2.jpg"
+            height="200"
+            width="200"
+            alt="Korean Salad"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Korean Salad</h4>
+            <p>A healthy Korean inspired salad.</p>
+            <a class="icon-link" href="koreansalad.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/lunch3.jpg"
+            height="200"
+            width="200"
+            alt="Italian Salad"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Italian Salad</h4>
+            <p>This salad uses very few ingredients.</p>
+            <a class="icon-link" href="italiansalad.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/lunch4.jpg"
+            height="200"
+            width="200"
+            alt="Salmon Bowl"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Salmon Bowl</h4>
+            <p>Enjoy this light & filling salmon bowl.</p>
+            <a class="icon-link" href="salmon.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes-section p-5">
+      <h4>Dinner</h4>
+      <div class="container our-recipes-box-container">
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/burger.jpg"
+            height="200"
+            width="200"
+            alt="Smash Burger"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Smash Burgers</h4>
+            <p>The most amazing & juicy smash burgers.</p>
+            <a class="icon-link" href="burgers.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/veggieburger.jpg"
+            height="200"
+            width="200"
+            alt=" veggie burger"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Veggie Burger</h4>
+            <p>This meat free burger makes for a perfect dinner.</p>
+            <a class="icon-link" href="veggieburger.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/rice.jpg"
+            height="200"
+            width="200"
+            alt="Prawn Rice Bowl"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Prawn Rice Bowl</h4>
+            <p>A fresh & amazing seafood inspired dish.</p>
+            <a class="icon-link" href="prawn.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/feature4.jpg"
+            height="200"
+            width="200"
+            alt="low cal pizza"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Low Calorie Pizza</h4>
+            <p>A simple, low calorie pepperoni pizza.</p>
+            <a class="icon-link" href="pizza.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Featured recipe-->
+
+    <section class="recipes-section p-5">
+      <h4>Dessert</h4>
+      <div class="container our-recipes-box-container">
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/dessert1.jpg"
+            height="200"
+            width="200"
+            alt="Choc Brownie"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Chocolate Brownie</h4>
+            <p>An amazing mouthwattering chocolate brownie.</p>
+            <a class="icon-link" href="brownie.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/dessert2.jpg"
+            height="200"
+            width="200"
+            alt="Chocolate Pudding"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Chocolate Pudding</h4>
+            <p>Best served warm, with Ice Cream.</p>
+            <a class="icon-link" href="chocpud.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/dessert3.jpg"
+            height="200"
+            width="200"
+            alt="Berry Sorbet"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Berry Sorbet</h4>
+            <p>A fresh berry sorbet served with Greek Yoghurt.</p>
+            <a class="icon-link" href="berrysorbet.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <img
+            class="food-item-img"
+            src="./img/dessert4.jpg"
+            height="200"
+            width="200"
+            alt="raspberry Meringue"
+          />
+          <div class="overlay">
+            <h4 style="color: #212121">Rapsberry Meringue</h4>
+            <p>A Dessert your tastebuds will thank you for.</p>
+            <a class="icon-link" href="raspberry.html"
+              ><img class="overlay-icon" src="./icons/icon-link.png" alt="link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Featured recipe-->
+
+    <!--MAIN CONTENT-->
+
+    <!--FOOTER-->
+    <footer class="footer p-5">
+      <a href="#top"
+        ><img class="scroll-icon" src="./icons/icon-scroll.png" alt="scroll up"
+      /></a>
+      <p>Copyright &copy; FoodSpace. Made by JoeGentsWebDev</p>
+      <p>
+        Icons By <a class="footer-link" href="https://icons8.com/">Icons8</a>
+      </p>
+    </footer>
+
+    <!--FOOTER-->
+
+    <script src="hello.js" async defer></script>
+  </body>
+</html>
