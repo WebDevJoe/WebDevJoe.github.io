@@ -1,0 +1,701 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/**** MEDIA QUERY FOR FONT STYLE *******/
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .hero-heading {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-heading {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero-heading {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+}
+/**** MEDIA QUERY FOR FONT STYLE *******/
+
+body {
+  background-color: #212121;
+}
+/*  BASE CODE USED FROM WEB DEV TUTORIALS BUT I HAVE ALTERED TO SUIT MY NEEDS. https://www.youtube.com/watch?v=flItyHiDm7E&t=307s */
+header {
+  background-color: #282828;
+}
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #ffc20d;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.nav-logo:hover {
+  color: #ffc20d;
+}
+.nav-link {
+  transition: 0.8s ease;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  transition: 0.8s ease;
+  color: #ffc20d !important;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  width: 25px;
+  height: 3px;
+  display: block;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #282828;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+/*  BASE CODE USED FROM WEB DEV TUTORIALS BUT I HAVE ALTERED TO SUIT MY NEEDS. https://www.youtube.com/watch?v=flItyHiDm7E&t=307s */
+
+/*************HERO************/
+
+.hero {
+  background-image: url(./img/hero.jpg);
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  height: 70vh;
+  text-align: center;
+}
+.hero-heading {
+  color: white;
+  font-weight: bold;
+}
+.hero-text {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+.hero-cta {
+  background-color: #ffc20d;
+  padding: 20px 50px;
+  border: none;
+  color: #212121;
+  text-decoration: none;
+}
+
+.hero-cta:hover {
+  background-color: white;
+  color: #212121;
+  transition: 0.3s;
+}
+
+/*************HERO************/
+
+/*************TESTIMONIALS************/
+
+.testimonials {
+  background-color: #ffc20d;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container-testimonials {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.box-heading {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .container-testimonials {
+    flex-direction: column;
+  }
+  .box {
+    padding: 20px 0;
+  }
+}
+
+/*************TESTIMONIALS************/
+
+/*************Features ************/
+.feature {
+  background-color: #212121;
+  text-align: center;
+}
+.section-heading {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding-bottom: 2em;
+}
+
+.box-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.food-item {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.food-item-img {
+  display: block;
+  transition: transform 0.5s;
+}
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  height: 0;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 10px;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffc20d;
+  transition: height 0.5s;
+}
+.overlay h4 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  padding-top: 20px;
+}
+.overlay p {
+  font-size: 14px;
+}
+.overlay-icon {
+  width: 30px;
+}
+.icon-link {
+  background-color: white;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+.food-item:hover .food-item-img {
+  transform: scale(1.1);
+}
+.food-item:hover .overlay {
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .box-container {
+    flex-direction: column;
+  }
+}
+/*************Features ************/
+
+/*************ABOUT ************/
+.about {
+  background-color: #212121;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-heading {
+  padding-bottom: 0.3em;
+}
+
+.about-text {
+  color: #c6c6c6;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+.about-col-1 {
+  flex-basis: 60%;
+}
+.about-col-2 {
+  flex-basis: 40%;
+}
+
+.about-box {
+  height: 400px;
+  background-image: url(./img/burger.jpg);
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+}
+@media (max-width: 1024px) {
+  .row {
+    flex-direction: column;
+  }
+  .about-col-2 {
+    display: none;
+  }
+  .about-heading {
+    text-align: center;
+  }
+}
+/*************ABOUT ************/
+
+/*************PROMISE ************/
+.promise {
+  background-color: #ffc20d;
+  text-align: center;
+}
+
+.promise-heading {
+  color: #212121;
+}
+.container-promise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promise-box {
+  padding-top: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  width: 325px;
+  height: 250px;
+  margin: 20px;
+}
+.promise-icons {
+  width: 80px;
+  padding-bottom: 15px;
+}
+
+.promise-box h5 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+@media (max-width: 768px) {
+  .container-promise {
+    flex-direction: column;
+  }
+}
+
+/*************PROMISE ************/
+
+/****VIDEO SECTION ****/
+.video-section {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.video-heading {
+  text-align: center;
+}
+
+@media (max-width: 730px) {
+  .video {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .video {
+    height: 300px;
+    width: 300px;
+  }
+}
+/****VIDEO SECTION ****/
+
+/*******FOOTER ****/
+.footer {
+  background-color: #ffc20d;
+  text-align: center;
+}
+.scroll-icon {
+  width: 70px;
+  padding-bottom: 15px;
+}
+
+.footer-link {
+  color: black;
+}
+.footer-link:hover {
+  color: #282828;
+}
+/*******FOOTER ****/
+
+/********************* Food inspect PAGE ***************************/
+.leftside,
+.rightside {
+  height: 50vh;
+  width: 100%;
+}
+
+.leftside {
+  background-color: #ffc20d;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rightside {
+  background: url(./img/burger.jpg);
+  background-size: 100% 100%;
+  background-position: 100%;
+}
+
+.food-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.food-detail1 {
+  margin: 10px 30px;
+}
+
+.food-details h5 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+
+.leftside h3 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.leftside p {
+  text-align: center;
+}
+
+.recipe {
+  background-color: #212121;
+  text-align: center;
+  color: white;
+}
+
+.tabs-headings {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #ffc20d;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  transition: 0.6s;
+}
+
+.tab-content ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+.tab-contents span {
+  color: #ffc20d;
+  font-size: 16px;
+}
+
+/********************* Food inspect PAGE ***************************/
+
+/********************OUR RECIPES PAGE *********/
+.recipes-section {
+  background-color: #212121;
+  text-align: center;
+}
+
+.recipes-section h4 {
+  font-weight: bold;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/********************* FAQ PAGE ***************************/
+.faqs {
+  background-color: #212121;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meal-time-h4 {
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+/****BASE CODE USED FROM Developer Empire https://www.youtube.com/watch?v=4qnWreynXLU&list=LL&index=4 */
+
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question h3 {
+  font-size: 2rem;
+}
+.answer p {
+  padding-top: 1rem;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+}
+.faq.active .answer {
+  min-height: 150px;
+}
+
+.faq.active img {
+  transform: rotate(180deg);
+}
+img {
+  transition: transform 0.8s;
+}
+
+@media (max-width: 768px) {
+  .question h3 {
+    font-size: 1.4em;
+  }
+  .answer p {
+    font-size: 14px;
+  }
+}
+
+/****BASE CODE USED FROM Developer Empire https://www.youtube.com/watch?v=4qnWreynXLU&list=LL&index=4 */
+
+/********************* FAQ PAGE ***************************/
+
+/********************* CONTACT US PAGE ***************************/
+.contact-section {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-box {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-left {
+  height: 100%;
+  background: url(./imgBig/contact.jpg);
+  background-position: 100%;
+  background-size: 100% 100%;
+}
+
+.contact-right {
+  padding: 25px 40px;
+  background-color: #282828;
+}
+.contact-right h4 {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  padding-top: 5px;
+  margin-bottom: 10px;
+}
+
+.field {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  outline: none;
+  background-color: transparent;
+  font-size: 12px;
+  transition: 0.3s;
+  border: solid 2px white;
+  margin-bottom: 24px;
+}
+input {
+  color: white;
+}
+
+.field:hover {
+  border: #ffc20d solid 2px;
+}
+textarea {
+  color: white;
+}
+.area {
+  min-height: 150px;
+}
+.icons-div {
+  padding-top: 20px;
+}
+.icons-div img {
+  width: 40px;
+  margin: 0 8px;
+}
+
+.button {
+  background-color: #ffc20d;
+  padding: 20px 50px;
+  border: none;
+}
+.button:hover {
+  background-color: white;
+  color: #212121;
+  transition: 0.3s;
+}
+
+button {
+  background-color: #ffc20d;
+  padding: 20px 50px;
+  border: none;
+  margin-right: 200px;
+}
+button:hover {
+  background-color: white;
+  color: #212121;
+  transition: 0.3s;
+}
+
+.icons-div img:hover {
+  transform: scale(1.2);
+}
+
+.popup-window {
+  width: 300px;
+  background-color: #212121;
+  border: solid 2px white;
+  position: absolute;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-window img {
+  width: 100px;
+  margin-top: -80px;
+}
+.bg-blur {
+  filter: blur(10px);
+}
+
+.open-popup {
+  display: block;
+}
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .contact-left {
+    height: 250px;
+  }
+}
+
+/********************* CONTACT US PAGE ***************************/
