@@ -1,0 +1,152 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    color:hsl(0, 0%, 100%, 60%);
+    padding: 1.25rem;
+
+}
+
+.container{
+    padding: 1.25rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.container img{
+    max-width: 100%;
+}
+
+.container .main-image{
+position: relative;
+}
+
+.container .main-image .overlay{
+    position: absolute;
+    top: 0;
+    background-color:hsl(178, 100%, 50%, 60%) ;
+    width: 100%;
+    height: calc(100% - 4px);
+   z-index: 999;
+   cursor: pointer;
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.container .main-image .overlay:hover{
+   opacity: 1;
+    cursor: pointer;
+}
+
+.container .main-image .overlay img{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 ;
+    border-bottom: 1px solid  hsl(215, 32%, 27%);
+}
+
+
+.container ul li{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.container ul li:first-child{
+    color:hsl(178, 100%, 50%) ;
+}
+
+.container ul li img{
+    margin-right: 0.5rem;
+}
+
+p{
+    font-weight: 300;
+}
+
+h2{
+    font-weight: 600;
+    color: white;
+    margin: 1rem 0.5rem .5rem 0;
+}
+h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+.avatar{
+display: flex;
+align-items: center;
+justify-content: start;
+padding-top: 2rem ;
+}
+
+.avatar img{
+    width: 3.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+span{
+    color: white;
+    font-weight: 400;
+}
+
+span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+@media(min-width:500px){
+    .container{
+        width: 450px;
+   
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+    }
+}
+

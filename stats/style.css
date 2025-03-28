@@ -1,0 +1,236 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 120vh;
+    overflow: hidden;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 80%;
+    max-width: 1120px;
+    background: hsl(244, 38%, 16%);
+    height: 400px;
+    margin: 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+
+}
+
+.left-content {
+    position: relative;
+    background: hsl(244, 38%, 16%);
+
+
+}
+
+.right-content {
+    position: relative;
+    background-image: url('images/image-header-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.layer-right {
+    background-color: hsl(277, 64%, 61%, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+@media (max-width: 850px) {
+    .card {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 10px 0;
+        max-width: 375px;
+
+    }
+
+    .left-content {
+        height: 300px;
+        position: relative;
+        width: 100%;
+        background-image: url('images/image-header-mobile.jpg');
+        background-size: cover;
+        object-fit: cover;
+        image-rendering: crisp-edges;
+
+
+    }
+
+    .left-content .layer-left {
+        background-color: hsl(277, 64%, 61%, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .right-content {
+
+        max-width: 375px;
+        height: auto;
+        background-color: hsl(244, 38%, 16%);
+        z-index: 1000;
+        background-image: none;
+        justify-content: center;
+        shape-rendering: crispEdges;
+
+    }
+
+    .layer-right {
+        display: none;
+    }
+
+    .content {
+        text-align: center;
+        padding: 1em;
+        margin-top: 20px;
+    }
+}
+
+.content-heading {
+    font-size: 2em;
+    line-height: 30px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+    font-family: 'Inter', sans-serif;
+
+}
+
+.subtext {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
+
+}
+
+.contentlist {
+    list-style: none;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    text-align: center;
+    justify-content: center;
+}
+
+.listspan {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+
+
+}
+
+li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -20px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+}
+
+.content-desktop {
+    display: none;
+}
+
+
+
+
+@media (min-width: 850px) {
+    .right-content {
+        position: relative;
+        width: 100%;
+        height: 450px;
+        background-color: hsl(244, 38%, 16%);
+    }
+
+    .content {
+        display: none;
+    }
+
+    .content-desktop {
+        display: block;
+        text-align: left;
+        padding: 1em;
+        margin-top: 20px;
+        margin-left: 50px;
+
+    }
+
+    .content-heading-desktop {
+        font-size: 1.8em;
+        font-weight: 700;
+        line-height: 30px;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+    }
+
+    .subtext-desktop {
+        color: hsla(0, 0%, 100%, 0.75);
+        padding-bottom: 1em;
+        font-family: 'Inter', sans-serif;
+        line-height: 25px;
+        font-size: 12px;
+
+    }
+
+    .contentlist-desktop {
+        display: flex;
+        list-style: none;
+        margin-left: -60px;
+        line-height: 25px;
+        color: hsla(0, 0%, 100%, 0.75);
+        text-align: left;
+
+
+
+    }
+
+    .contentlist-desktop li {
+        margin: 20px;
+        font-size: 12px;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .listspan-desktop {
+        color: hsl(0, 0%, 100%);
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+
+    }
+
+
+}

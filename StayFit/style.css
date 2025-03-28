@@ -1,0 +1,459 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+.hero {
+    background-color: black;
+}
+
+.hero-h1 {
+    font-size: 4em;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.hero-heading {
+    text-align: left;
+    font-size: 1em;
+    padding-bottom: 15px;
+}
+
+.hero-span {
+    color: #6875F1;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .d-sm-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+#testimonials {
+    background-color: #6875F1;
+}
+
+.hero-cta {
+    background-color: #6875F1;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 80px;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    opacity: 1;
+}
+
+.hero-cta:hover {
+    color: white;
+    border: solid 2px white;
+}
+
+
+
+
+
+
+
+@media (max-width:868px) {
+    .hero-h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .hero-heading {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width:541px) {
+    .col-sm-4 {
+        padding-bottom: 1em;
+    }
+
+    .hero-cta {
+        -webkit-appearance: none;
+        opacity: 1
+    }
+
+
+
+}
+
+
+.quote {
+    background-color: black;
+}
+
+.quote img {
+    width: 500px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+}
+
+
+
+.name {
+    color: #6875F1;
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+    .d-md-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-fluid {
+        width: 90% !important;
+    }
+}
+
+
+
+
+
+
+.button:hover {
+    outline: none;
+    border: solid 2px white;
+    color: white;
+    font-weight: bold;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+
+
+.button {
+    outline: none;
+    border: solid 2px white;
+    color: white;
+    font-weight: bold;
+    background-color: #6875F1;
+    border-radius: 50px;
+    padding: 15px 30px;
+    -webkit-appearance: none;
+}
+
+
+
+@media (max-width:991px) {
+    .newsletter-h3 {
+        font-size: 1.3rem;
+        padding-bottom: 1em;
+    }
+}
+
+.newsletter {
+    background-color: #6875F1;
+
+
+
+}
+
+
+
+
+
+
+form {
+    display: inline-block;
+    position: relative;
+
+}
+
+form input {
+    padding-right: 5.6em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: solid 2px white;
+}
+
+form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+
+@media(min-width:1000px) {
+    form input {
+        padding-right: 8.6em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow: hidden;
+        border-radius: 50px;
+        border: solid 2px white;
+    }
+}
+
+
+
+
+.newsletter-h3 {
+    font-weight: bold;
+
+}
+
+
+
+@media(max-width:380px) {
+
+    .d-lg-flex {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-direction: column;
+
+    }
+
+    form input {
+        padding-right: 3.6em;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow: hidden;
+        border-radius: 50px;
+        border: solid 2px white;
+    }
+
+    button {
+        -webkit-appearance: none;
+        opacity: 1;
+    }
+
+    .hero-cta {
+        background-color: #6875F1;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px 80px;
+        border-radius: 30px;
+        -webkit-appearance: none;
+        opacity: 1;
+    }
+
+    .hero-cta:hover {
+        color: white;
+        border: solid 2px white;
+    }
+}
+
+
+
+
+/* what we do ***/
+
+.what-we-do {
+    padding: 7em;
+}
+
+
+.what-we-do-h1 {
+    text-align: left;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    font-weight: bold;
+
+}
+
+.col-h4 {
+    color: #6875F1;
+    font-weight: bold;
+
+}
+
+
+.card-cta {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.card-cta:hover {
+    color: #6875F1;
+}
+
+
+
+
+
+@media(max-width:768px) {
+    .what-we-do {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding: 50px;
+
+    }
+
+    .col-md {
+        padding-bottom: 2.5em;
+    }
+}
+
+
+
+/* about section ****/
+
+
+section.about {
+    background-color: #6875F1;
+}
+
+.about-h1 {
+    padding-bottom: .1em;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 70%;
+    text-align: right;
+
+}
+
+.about-text {
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+
+.about-text-col {
+    flex-grow: 1;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    display: flex;
+
+
+
+
+}
+
+
+li {
+    margin-right: 10px;
+}
+
+
+@media(min-width:768px) {
+
+
+    .headshot-col {
+        text-align: right;
+    }
+}
+
+
+/****  ACCORDION ****/
+
+.accordion .accordion-flus {
+    background-color: black !important;
+}
+
+.accordion-button {
+    color: white !important;
+    background-color: black;
+    border-bottom: solid 1px white;
+
+}
+
+.accordion-button .collapsed {
+    color: white !important;
+    background-color: black;
+
+}
+
+
+.accordion-body {
+    color: black;
+    background-color: white;
+}
+
+/*
+.accordion-item{
+    background-color: rebeccapurple;
+}
+*/
+
+
+
+/*** FOOTER ***/
+
+
+.arrow-up {
+    color: white;
+}
+
+.arrow-up:hover {
+    color: #6875F1;
+}
+
+
+
+
+
+.attribution {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.attribution:hover {
+    color: #6875F1;
+    text-decoration: none;
+
+}
+
+@media(max-width:500px) {
+    ul {
+        display: none;
+    }
+
+}
+
+/*** MODAL ****/
+
+
+.button-modal-send {
+    background-color: #6875F1;
+    color: white;
+}
