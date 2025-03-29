@@ -1335,6 +1335,8 @@ footer .social-links a {
 
 .feature-item:hover .feature-icon img {
   transform: scale(1.1);
+  filter: brightness(0) saturate(100%) invert(90%) sepia(77%) saturate(1190%)
+    hue-rotate(139deg) brightness(101%) contrast(103%);
 }
 
 .art-icon {
@@ -1369,16 +1371,17 @@ footer .social-links a {
 }
 
 .feature-link {
-  color: var(--text-color);
+  color: #01dfd2;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
-  display: flex;
+  margin-top: 1rem;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-  font-family: "Poppins", sans-serif;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.25rem 0;
+  position: relative;
 }
 
 .feature-link:hover {
