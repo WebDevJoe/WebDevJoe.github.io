@@ -345,7 +345,7 @@ nav {
 /* Featured Games Section */
 .featured-games-section {
   background-color: #151024;
-  padding: 6rem 0 4rem;
+  padding: 5rem 0;
   position: relative;
   z-index: 3;
   margin-top: -2px; /* Negative margin to remove gap */
@@ -550,7 +550,7 @@ nav {
 /* Footer */
 footer {
   background-color: var(--background-dark);
-  padding: 3rem 5%;
+  padding: 3rem 0;
   text-align: center;
   border-top: 1px solid rgba(77, 238, 234, 0.1);
 }
@@ -705,7 +705,7 @@ footer .social-links a {
   .careers-section,
   .news-section,
   .stats-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
 
   /* Adjust container widths */
@@ -864,7 +864,7 @@ footer .social-links a {
   }
 
   .stats-section {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
   }
 
   .stat-item h3 {
@@ -918,7 +918,7 @@ footer .social-links a {
   }
 
   .stats-section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .stat-item h3 {
@@ -941,7 +941,7 @@ footer .social-links a {
 /* News Section */
 .news-section {
   position: relative;
-  padding: 3rem 0 2rem;
+  padding: 5rem 0;
   background: transparent;
   z-index: 2;
   width: 90%;
@@ -1173,7 +1173,7 @@ footer .social-links a {
 .stats-section {
   position: relative;
   width: 100%;
-  padding: 7rem 0;
+  padding: 5rem 0;
   background: url("../src/statsbg.png") center / cover no-repeat;
   background-position: center 40%;
   text-align: center;
@@ -1225,12 +1225,18 @@ footer .social-links a {
   font-size: 5.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #00fff0;
+  background: radial-gradient(circle, #00d6c9 0%, #00fff0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Jomhuria", cursive;
 }
 
 .stat-item h3 span {
-  color: #00fff0;
+  background: radial-gradient(circle, #00d6c9 0%, #00fff0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .stat-item p {
@@ -1286,7 +1292,7 @@ footer .social-links a {
 /* Why We Succeed Section */
 .why-succeed-section {
   background-color: #151024;
-  padding: 6rem 0;
+  padding: 5rem 0;
   position: relative;
   z-index: 3;
 }
@@ -1399,7 +1405,7 @@ footer .social-links a {
 /* Careers Section */
 .careers-section {
   background-color: #151024;
-  padding: 4rem 0;
+  padding: 5rem 0;
   position: relative;
   z-index: 2;
 }
