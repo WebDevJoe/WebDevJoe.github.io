@@ -876,6 +876,9 @@ footer .social-links a {
   .hero h1 {
     font-size: 3.5rem;
   }
+  .careers-card-inner {
+    padding: 1rem;
+  }
 
   .hero p {
     font-size: 0.9rem;
